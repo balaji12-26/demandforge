@@ -42,7 +42,7 @@ Forecasting accuracy on held-out data:
 
 ## How it works
 
-Eleven stages, orchestrated by `src/main.py`:
+Nine stages, orchestrated by `src/main.py`:
 
 1. **Synthetic data generation** (`synthetic_data.py`) — 30 days at 15-minute resolution, with weekday/weekend variation, of electrical demand, furnace thermal output, ORC electrical output and solar generation.
 2. **XGBoost co-forecasting** (`xgboost_forecast.py`) — predicts electrical and thermal load jointly, since ORC output is downstream of furnace heat.
